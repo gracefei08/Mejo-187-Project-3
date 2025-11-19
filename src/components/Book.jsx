@@ -84,7 +84,11 @@ function Book() {
               <div className="page">
                 <div className="page-content">
                   <div className="description-container">
-                    <img className="image-pages" src={Photo1} />
+                    <img
+                      className="image-pages"
+                      src={Photo1}
+                      alt="solar_panels_on_the_moon"
+                    />
                     <p>
                       A new global race to the moon is underway, driven not by
                       the desire to plant flags but to extract valuable
@@ -144,7 +148,11 @@ function Book() {
               <div className="page">
                 <div className="page-content">
                   <div className="description-container">
-                    <img className="image-pages" src={Photo2} />
+                    <img
+                      className="image-pages"
+                      src={Photo2}
+                      alt="astronaut_on_the_moon"
+                    />
                     <p>
                       Companies and nations alike recognize that whoever masters{" "}
                       <HoverText
@@ -286,7 +294,11 @@ function Book() {
               <div className="page">
                 <div className="page-content">
                   <div className="description-container">
-                    <img className="image-pages" src={Photo3} />
+                    <img
+                      className="image-pages"
+                      src={Photo3}
+                      alt="possible_new_tech_on_the_moon"
+                    />
 
                     <p>
                       Power generation is another decisive factor, with multiple

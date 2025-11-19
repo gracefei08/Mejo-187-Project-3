@@ -1,7 +1,6 @@
 import React from "react";
 import Book from "./components/Book.jsx";
 import Particles from "./Particles.jsx";
-import he from "./components/images/he.png";
 import "./App.css";
 
 function App() {
