@@ -9,6 +9,13 @@ import SeanIMG from "./images/sean.webp";
 import Photo1 from "./images/photo1.webp";
 import Photo2 from "./images/photo2.webp";
 import Photo3 from "./images/photo3.webp";
+import Change6 from "./images/Change6.jpg";
+import Interlune from "./images/Interlune.webp";
+import Bluefors from "./images/Bluefors.webp";
+import Nuclear from "./images/Nuclear.jpg";
+import NuclearEnergy from "./images/NuclearEnergy.jpg";
+import moon from "./images/moon.jpg";
+
 import HoverText from "./HoverText.jsx";
 
 function Book() {
@@ -98,13 +105,20 @@ function Book() {
                         image={heImg}
                         imageAlt={"helium-3-image"}
                         definition={
-                          "a stable isotope of helium with one neutron"
+                          "A stable isotope of helium with one neutron"
                         }
                       />
                       . These materials have both economic and strategic
-                      importance, particularly helium-3, which could power
-                      nuclear reactors on the moon and cool quantum computers on
-                      Earth.
+                      importance, particularly helium-3, which could power{" "}
+                      <HoverText
+                        text={"nuclear reactors"}
+                        image={Nuclear}
+                        imageAlt={"nuclear_reactor"}
+                        definition={
+                          "A device used to sustain a controlled fission nuclear chain reaction"
+                        }
+                      />{" "}
+                      on the moon and cool quantum computers on Earth.
                     </p>
                     <button
                       className="sticky-note-button"
@@ -125,12 +139,28 @@ function Book() {
                     <p>
                       Private companies are now major players in this new space
                       economy, marking a shift from government-led exploration
-                      to commercial competition. Recent deals, such as Bluefors
-                      purchasing lunar helium-3 from Interlune for $300 million,
-                      show the growing commercial viability of lunar mining.
-                      Blue Origin’s Project Oasis further emphasizes this shift
-                      by mapping lunar resources to identify potential mining
-                      sites.
+                      to commercial competition. Recent deals, such as{" "}
+                      <HoverText
+                        text={"Bluefors"}
+                        image={Bluefors}
+                        imageAlt={"Bluefors"}
+                        definition={
+                          "Helsinki-based company specializing in cryogenic products used in several high-tech industries"
+                        }
+                      />{" "}
+                      purchasing lunar helium-3 from{" "}
+                      <HoverText
+                        text={"Interlune"}
+                        image={Interlune}
+                        imageAlt={"Interlune"}
+                        definition={
+                          "The first company to commercialize resources in space"
+                        }
+                      />{" "}
+                      for $300 million, show the growing commercial viability of
+                      lunar mining. Blue Origin’s Project Oasis further
+                      emphasizes this shift by mapping lunar resources to
+                      identify potential mining sites.
                     </p>
                     <button
                       className="sticky-note-button"
@@ -160,7 +190,7 @@ function Book() {
                         image={ISRUImg}
                         imageAlt={"ISRU-image"}
                         definition={
-                          "turning lunar materials like water ice into usable fuel"
+                          "The practice of turning lunar materials like water ice into usable fuel"
                         }
                       />{" "}
                       will dominate future space logistics and economies.
@@ -189,7 +219,7 @@ function Book() {
                         image={ESAImg}
                         imageAlt={"ESA-Logo"}
                         definition={
-                          "project by ESA with the goal of creating uninterrupted telecommunications satellite coverage between Earth and the Moon"
+                          "A Project by ESA with the goal of creating uninterrupted telecommunications satellite coverage between Earth and the Moon"
                         }
                       />{" "}
                       and{" "}
@@ -198,7 +228,7 @@ function Book() {
                         image={THalesImg}
                         imageAlt={"Thales-lunar-outpost"}
                         definition={
-                          "contract with the Italian Space Agency (ASI) to develop the first human outpost on the lunar surface"
+                          "A Contract with the Italian Space Agency (ASI) to develop the first human outpost on the lunar surface"
                         }
                       />{" "}
                       are essential for establishing a long-term presence on the
@@ -236,7 +266,7 @@ function Book() {
                         image={ITUImg}
                         imageAlt={"World-Radio-Communication-Conference"}
                         definition={
-                          "conference organized by the ITU to review and revise the Radio Regulations"
+                          "A Conference organized by the ITU to review and revise the Radio Regulations"
                         }
                       />
                       . The event will likely shape the rules for resource
@@ -268,7 +298,7 @@ function Book() {
                         image={SeanIMG}
                         imageAlt={"Sean-Duffy-profile"}
                         definition={
-                          "an American politician and attorney, serving as the 20th U.S. secretary of transportation since January 2025"
+                          "An American politician and attorney, serving as the 20th U.S. secretary of transportation since January 2025"
                         }
                       />
                       , have framed the Artemis program as a race against China
@@ -299,7 +329,6 @@ function Book() {
                       src={Photo3}
                       alt="possible_new_tech_on_the_moon"
                     />
-
                     <p>
                       Power generation is another decisive factor, with multiple
                       nations developing nuclear reactors to support lunar
@@ -323,13 +352,21 @@ function Book() {
                   <div className="description-container">
                     <p>
                       Since solar power cannot operate during the moon’s
-                      two-week-long night, nuclear energy offers the only viable
-                      means of continuous operation. However, deploying reactors
-                      may create de facto “keep out zones,” challenging existing
-                      space law and potentially granting the first movers
-                      control over local resources. China’s lunar strategy
-                      exemplifies this blend of technical capability and
-                      geopolitical ambition.
+                      two-week-long night,{" "}
+                      <HoverText
+                        text={"nuclear energy"}
+                        image={NuclearEnergy}
+                        imageAlt={"nuclear_energy"}
+                        definition={
+                          "When electricity is made from atoms splitting apart"
+                        }
+                      />{" "}
+                      offers the only viable means of continuous operation.
+                      However, deploying reactors may create de facto “keep out
+                      zones,” challenging existing space law and potentially
+                      granting the first movers control over local resources.
+                      China’s lunar strategy exemplifies this blend of technical
+                      capability and geopolitical ambition.
                     </p>
                     <button
                       className="sticky-note-button"
@@ -348,13 +385,21 @@ function Book() {
                 <div className="page-content">
                   <div className="description-container">
                     <p>
-                      Following successful missions like Chang’e 6, China
-                      continues advancing its lunar infrastructure and rallying
-                      international partners. Ultimately, the moon race is no
-                      longer just about engineering achievements but also about
-                      political leadership and diplomatic influence, as whoever
-                      leads in space, as Sean Duffy declared, “will lead on
-                      Earth."
+                      Following successful missions like{" "}
+                      <HoverText
+                        text={"Chang’e 6"}
+                        image={Change6}
+                        imageAlt={"Chang’e_6"}
+                        definition={
+                          "The sixth robotic lunar exploration mission by the China National Space Administration"
+                        }
+                      />{" "}
+                      China continues advancing its lunar infrastructure and
+                      rallying international partners. Ultimately, the moon race
+                      is no longer just about engineering achievements but also
+                      about political leadership and diplomatic influence, as
+                      whoever leads in space, as Sean Duffy declared, “will lead
+                      on Earth."
                     </p>
                     <button
                       className="sticky-note-button"
@@ -378,6 +423,8 @@ function Book() {
                       >
                         Sources
                       </button>
+
+                      <img className="moon-img" src={moon} />
 
                       {sourceModal && (
                         <div className="modal-container">
